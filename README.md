@@ -3,7 +3,7 @@
 
 
 EAGLE's code is coming soon!  
-[[Project Page]](https://micv-yonsei.github.io/eagle2024/)  
+[[Project Page]](https://micv-yonsei.github.io/eagle2024/) [[arXiv]](https://arxiv.org/abs/2403.01482)  
 <br>
 ![1_imageb](./img/cover.png)
 > #### **EAGLE: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation**<be>  
