@@ -1,4 +1,4 @@
-# EAGLE<img src="img/eagle.png" width="30" height="30">: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation
+# EAGLE :eagle:: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation
 #### Official pytorch Implementation
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eagle-eigen-aggregation-learning-for-object/unsupervised-semantic-segmentation-on-coco-7)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-on-coco-7?p=eagle-eigen-aggregation-learning-for-object)  
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eagle-eigen-aggregation-learning-for-object/unsupervised-semantic-segmentation-on)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-on?p=eagle-eigen-aggregation-learning-for-object)  
