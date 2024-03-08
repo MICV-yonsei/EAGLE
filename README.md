@@ -38,4 +38,17 @@ We evaluate the EAGLE algorithm on the CocoStuff, Cityscapes, and Potsdam-3 data
 
 ![main_results](./img/results.png)
 
+## Citation
+If you found this code useful, please cite the following paper:  
+```
+@InProceedings{2024eagle,
+    author    = {Kim, Chanyoung and Han, Woojung and Ju, Dayun and Hwang, Seong Jae},
+    title     = {EAGLE: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024}
+}
+```
 
+## :scroll: Acknowledgement
+This repository has been developed based on the [STEGO](https://github.com/mhamilton723/STEGO) repository. Thanks for the good work!
