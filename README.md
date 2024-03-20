@@ -30,7 +30,7 @@ Comparison between K-means and EiCue. The bottom row presents EiCue, highlightin
 ### EAGLE Architecture
 The pipeline of **EAGLE**. Leveraging the Laplacian matrix, which integrates hierarchically projected image key features and color affinity, the model harnesses eigenvector clustering to capture an object-centric perspective. Our model further adopts an object-level contrastive loss, utilizing the projected vector Z and ̃Z. The learnable prototype Φ, acts as a singular anchor that contrasts positive objects and negative objects. Our object-level contrastive loss is computed in two distinct manners: crosswise and non-crosswise to ensure semantic consistency.
 
-![image](./img/eagle_architecture.png)
+![image](./img/mainfigure.png)
 
 
 ### Results
