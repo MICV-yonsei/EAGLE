@@ -1,0 +1,27 @@
+output_root: '../'
+pytorch_data_dir: 'pytorch_data_dir'
+experiment_name: "cocostuff27"
+res: 320
+batch_size: 8
+num_workers: 8
+run_picie: False
+run_crf: True
+run_prediction: True
+dark_mode: True
+use_ddp: False
+
+dino_patch_size: 8
+dino_feat_type: "feat"
+projection_type: "nonlinear"
+model_type: "vit_small"
+pretrained_weights: ~
+dataset_name: "cocostuff27"
+
+model_paths:
+ - '../checkpoints/EAGLE_COCO_ViTS8.ckpt'
+#  - '../checkpoints/EAGLE_Cityscapes_ViTB8.ckpt'
+
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~

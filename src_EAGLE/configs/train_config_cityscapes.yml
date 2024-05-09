@@ -1,0 +1,107 @@
+output_root: '../'
+pytorch_data_dir: 'pytorch_data_dir'
+experiment_name: "cityscapes_EAGLE"
+log_dir: "cityscapes"
+dataset_name: "cityscapes"
+azureml_logging: True
+submitting_to_aml: False
+
+# wandb params
+project_name: "EAGLE" 
+entity: "your_ID"
+
+# Loader params
+num_workers: 24
+max_steps: 6000
+batch_size: 32
+step_schedulers: 380
+dir_dataset_name: ~
+dir_dataset_n_classes: 5
+
+has_labels: False
+crop_type: 'five'
+crop_ratio: .5
+res: 224
+loader_crop_type: "center"
+
+# lr
+lr_linear: 5e-3 
+lr_cluster: 3e-3 
+lr_cluster_eigen: 5e-4
+
+# eigen
+eigen_cluster: 4
+eigen_cluster_out: 28
+
+# Model Params
+use_head: True
+extra_clusters: 1
+use_true_labels: False
+use_recalibrator: False
+model_type: "vit_base"
+arch: "dino"
+use_fit_model: False
+dino_feat_type: "KK"
+projection_type: "nonlinear"
+dino_patch_size: 8
+granularity: 1
+continuous: True
+dim: 512
+dropout: True
+zero_clamp: True
+recluster_threshold: 0.85
+lr: 5e-4
+pretrained_weights: ~
+stabalize: True
+stop_at_zero: True
+shift_value: 3.5
+shift_bias: 0.11
+
+# Feature Contrastive params
+pointwise: True
+feature_samples: 28
+neg_samples: 5
+aug_alignment_weight: 0.0
+
+correspondence_weight: 1.0
+
+local_pos_weight: 0.85
+local_pos_aug_weight: 0.85
+global_loss_weight: 0.7
+contrastive_temp: 0.07
+momentum_limit: 0.7
+centroid_mode: "prototype"
+
+neg_inter_weight: 1.0
+pos_inter_weight: 0.18
+pos_intra_weight: 1
+
+rec_weight: 0.0
+repulsion_weight: 0.0
+
+# CRF Params
+crf_weight: 0.0
+alpha: .5
+beta: .15
+gamma: .05
+w1: 10.0
+w2: 3.0
+shift: 0.00
+crf_samples: 1000
+color_space: "rgb"
+
+reset_probe_steps: ~
+
+n_images: 4
+scalar_log_freq: 10
+checkpoint_freq: 100
+val_freq: 100
+hist_freq: 100
+
+
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~
+  #job_logging: "disabled"
+  #hydra_logging: "disabled"
