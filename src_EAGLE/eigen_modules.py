@@ -212,7 +212,7 @@ class EigenLoss(nn.Module):
         max_values = w_combs.max(dim=-1, keepdim=True)[0].max(dim=-2, keepdim=True)[0]
         w_combs = w_combs / max_values 
 
-        W_comb = w_combs
+        W_comb = w_combs + adj
         D_comb = torch.stack([get_diagonal(w_comb) for w_comb in W_comb])
         L_comb = D_comb - W_comb
         lap = self.normalized_laplacian(L_comb, D_comb)
