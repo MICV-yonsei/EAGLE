@@ -461,7 +461,10 @@ class newLocalGlobalInfoNCE(nn.Module):
     def __init__(self, cfg, num_classes):
         super(newLocalGlobalInfoNCE, self).__init__()
         self.cfg = cfg
-        self.learned_centroids = nn.Parameter(torch.randn(num_classes, cfg.dim))
+        if cfg.dataset_name == 'cityscapes':
+            self.learned_centroids = nn.Parameter(torch.randn(num_classes+1, cfg.dim))
+        else:
+            self.learned_centroids = nn.Parameter(torch.randn(num_classes, cfg.dim))
         self.prototypes = torch.randn(num_classes + cfg.extra_clusters, cfg.dim, requires_grad=True)
         
     def compute_centroid(self, features, labels):
